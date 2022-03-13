@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Thumbnail Sentry",
+  "version": "1.0",
+
+  "description": "A Firefox extension that dynamicallly replaces images of a particular format.",
+
+  "icons": {
+    "48": "resources/sentry.png"
+  },
+
+  "content_security_policy": "img-src 'self'",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["ThumbnailSentry.js"]
+    }
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "fakeemail@fakeurl.com"
+    }
+  }
+}
