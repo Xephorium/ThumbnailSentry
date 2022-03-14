@@ -4,7 +4,7 @@
 :: Remove Existing Archive
 del ThumbnailSentry.xpi >NUL
 
-:: Zip Extension Files
+:: Zip Extension Files w/ Deflate Compression Method
 7z a -tzip Archive resources manifest.json ThumbnailSentry.js > NUL
 
 :: Rename Archive
