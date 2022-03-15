@@ -10,5 +10,8 @@ del ThumbnailSentry.xpi >nul 2>&1
 :: Rename Archive
 rename Archive.zip ThumbnailSentry.xpi >nul
 
+:: Move Extension Package to build Folder
+move /Y ThumbnailSentry.xpi build >nul
+
 :: Print Message
-ECHO Extension packaged.
+ECHO Extension packaged. Saved to 'build' directory.
