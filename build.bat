@@ -5,7 +5,7 @@
 del ThumbnailSentry.xpi >nul 2>&1
 
 :: Zip Extension Files w/ Deflate Compression Method
-7z a -tzip Archive resources manifest.json ThumbnailSentry.js >nul
+7z a -tzip Archive resources manifest.json ThumbnailSentry.js ThumbnailSentry.css >nul
 
 :: Rename Archive
 rename Archive.zip ThumbnailSentry.xpi >nul
