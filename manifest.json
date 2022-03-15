@@ -13,7 +13,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.fetlife.com/*"],
+      "matches": ["*://*.facebook.com/*"],
       "run_at": "document_start",
       "css": ["ThumbnailSentry.css"],
       "js": ["ThumbnailSentry.js"]
