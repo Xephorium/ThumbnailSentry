@@ -6,13 +6,19 @@
  */
 
 
-/*--- Constants ---*/
+/*--- Variables ---*/
 
 const users = [
-	"Mark Zuckerberg",
-	"Jeff Bezos",
-	"Elon Musk"
+	"BadMaggi",
+	"Miss-Eri",
+	"little-loudmouth"
 ];
+
+const sentryImage = browser.runtime.getURL("resources/sentry.png");
+
+const startTime = (new Date()).getTime();
+const pageLoadWindow = 5000;
+const checkFrequency = 25;
 
 
 /*--- Functions ---*/
@@ -21,7 +27,7 @@ function hideThumbnails() {
 	users.forEach((user) => {
 
 		// Assemble Search Query
-		query = 'a[title="' + user + '"] > img,'  	   // Thumbnails
+		let query = 'a[title="' + user + '"] > img,'  	   // Thumbnails
 			+ 'a[title^="Picture by ' + user + '"] > img'; // Photos
 
 		// Find Matching Elements
@@ -29,14 +35,34 @@ function hideThumbnails() {
 
 		// Replace Image Source
 		elements.forEach((element) => {
-		    element.src = "https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png"
+			if (element.src != sentryImage) {
+				element.src = sentryImage;
+				console.log("set!");
+			}
 		});
 	});
+}
+
+// Note: Checks for thumbnails to replace every 'checkFrequency' ms
+//       for the first 'pageLoadWindow' ms after page load. This is
+//       my brute-force solution to the issue of race conditions.
+function checkForThumbnailsOnPageLoad() {
+	currentTime = (new Date()).getTime();
+	if (currentTime > startTime + pageLoadWindow) {
+		clearInterval(timer);
+		return;
+	}
+	hideThumbnails()
 }
 
 
 /*--- Lifecycle Events ---*/
 
+
+// Initiate Rapid Checking on Page Load
+var timer = setInterval(checkForThumbnailsOnPageLoad, checkFrequency);
+
+// Queue Up Active Change Listener
 window.addEventListener('DOMSubtreeModified', function () {
 	hideThumbnails();
 }, true);

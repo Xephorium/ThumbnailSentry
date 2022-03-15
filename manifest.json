@@ -19,6 +19,10 @@
     }
   ],
 
+  "web_accessible_resources": [
+    "resources/sentry.png"
+  ],
+
   "browser_specific_settings": {
     "gecko": {
       "id": "developer.xephorium@gmail.com"
