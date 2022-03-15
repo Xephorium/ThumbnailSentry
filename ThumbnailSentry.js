@@ -10,7 +10,7 @@ function hideThumbnails() {
 
 		// Assemble Element Query
 		queries = 'a[title="' + user + '"] > img,'  	  // Thumbnails
-			+ 'a[title="Picture by ' + user + '"] > img'; // Photos
+			+ 'a[title^="Picture by ' + user + '"] > img'; // Photos
 
 		// Find Elements
 		let elements = document.querySelectorAll(queries);
