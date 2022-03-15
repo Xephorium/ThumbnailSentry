@@ -6,10 +6,10 @@
   "description": "A Firefox extension that dynamicallly replaces images of a particular format.",
 
   "icons": {
-    "48": "resources/sentry.png"
+    "48": "resources/sentry-transparent.png"
   },
 
-  "content_security_policy": "img-src 'self'",
+  "content_security_policy": "img-src 'self'; script-src 'self'; object-src 'none'",
 
   "content_scripts": [
     {
@@ -21,7 +21,7 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "fakeemail@fakeurl.com"
+      "id": "developer.xephorium@gmail.com"
     }
   }
 }
