@@ -14,7 +14,6 @@ const users = [
 	"Elon Musk"
 ];
 
-
 const sentryImage = browser.runtime.getURL("resources/sentry.png");
 
 const startTime = (new Date()).getTime();
