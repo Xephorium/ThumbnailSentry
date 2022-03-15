@@ -9,10 +9,11 @@
 /*--- Variables ---*/
 
 const users = [
-	"BadMaggi",
-	"Miss-Eri",
-	"little-loudmouth"
+	"Mark Zuckerberg",
+	"Jeff Bezos",
+	"Elon Musk"
 ];
+
 
 const sentryImage = browser.runtime.getURL("resources/sentry.png");
 
