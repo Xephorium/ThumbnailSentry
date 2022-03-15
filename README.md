@@ -6,7 +6,7 @@ A Firefox extension that dynamically replaces images of a particular format.
 <br>
 
 ### Packaging & Installation
-1. Run the `build` script included with the project. This will produce an extension package `ThumbnailSentry.xpi`.
+1. Run the `build` script included with the project.
 2. Add the extension to Firefox
 
    <img src="./markup/unsigned-extension-info.svg"><br>
@@ -16,11 +16,11 @@ A Firefox extension that dynamically replaces images of a particular format.
       2. Search `xpinstall.signatures.required` and set the flag to *false*
       3. Navigate to `about:addons`
       4. Click the cog beside *"Manage Your Extensions"* and select *"Install Add-on from file..."*
-      5. Select `ThumbnailSentry.xpi`
+      5. Select `ThumbnailSentry.xpi` from the `build` folder
 
    - **Add Temporary Extension**
       1. Navigate to `about:debugging#/runtime/this-firefox`
-      2. Click *"Add Temporary Add-on..."* and select `ThumbnailSentry.xpi`
+      2. Click *"Add Temporary Add-on..."* and select `ThumbnailSentry.xpi` from the `build` folder
 
 3. Profit!
 
