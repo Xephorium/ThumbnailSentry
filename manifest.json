@@ -13,8 +13,9 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.facebook.com/*"],
+      "matches": ["*://*.fetlife.com/*"],
       "run_at": "document_start",
+      "css": ["ThumbnailSentry.css"],
       "js": ["ThumbnailSentry.js"]
     }
   ],

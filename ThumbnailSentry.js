@@ -17,8 +17,8 @@ const users = [
 const sentryImage = browser.runtime.getURL("resources/sentry.png");
 
 const startTime = (new Date()).getTime();
-const pageLoadWindow = 5000;
-const checkFrequency = 25;
+const pageLoadWindow = 4000;
+const checkFrequency = 50;
 
 
 /*--- Functions ---*/

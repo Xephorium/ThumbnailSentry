@@ -1,0 +1,17 @@
+a[title~='Mark Zuckerberg'] img {
+  content:url('https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png') !important;
+  background:url('https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png') !important;
+  background-size:cover !important;
+}
+
+a[title~='Jeff Bezos'] img {
+  content:url('https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png') !important;
+  background:url('https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png') !important;
+  background-size:cover !important;
+}
+
+a[title~='Elon Musk'] img {
+  content:url('https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png') !important;
+  background:url('https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png') !important;
+  background-size:cover !important;
+}
