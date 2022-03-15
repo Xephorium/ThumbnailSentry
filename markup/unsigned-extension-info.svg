@@ -5,8 +5,8 @@
                 .container {
                     border-radius: 2px;
                     padding: 16px 16px;
-                    background-color: #BDE5F8;
-                    border: 1px solid rgba(0, 82, 155, 0.2);
+                    background-color: #e7e7e7;
+                    border: 1px solid rgba(92, 92, 92, 0.25);
                     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
                 }
 
@@ -18,17 +18,17 @@
                 }
 
                 .container .message {
-                    color: #00529B;
+                    color: #5c5c5c;
                     margin-left: 2rem;
-                    font-size: 1rem;
-                    line-height: 1.5rem;
+                    font-size: 16px;
+                    line-height: 1.6rem;
                 }
             </style>
             <div class="container">
                 <div class="header">
                     <div style="float: left; margin-right: 16px;">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="#00529B" viewBox="0 0 512 512"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" fill="#5c5c5c" viewBox="0 0 512 512"
                             style="enable-background:new 0 0 512 512;" xml:space="preserve">
                             <g>
                                 <path d="M501.609,384.603L320.543,51.265c-13.666-23.006-37.802-36.746-64.562-36.746c-26.76,0-50.896,13.74-64.562,36.746
@@ -41,7 +41,7 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="message"><b>Note:</b> This extension isn't signed. It can currently only be added to Firefox Developer Edition or as a temporary addon to Firefox proper. To enable unsigned extensions in either, navigate to 'about:config' and set the 'xpinstall.signatures.required' flag to false.</div>
+                    <div class="message"><b>Note:</b> This extension isn't signed. It can currently only be added to Firefox Developer Edition or as a temporary addon to Firefox proper. To enable unsigned extensions, navigate to 'about:config' and set the 'xpinstall.signatures.required' flag to false.</div>
                 </div>
             </div>
         </div>
