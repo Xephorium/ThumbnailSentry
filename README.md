@@ -9,7 +9,7 @@ A Firefox extension that dynamically replaces images of a particular format.
 - Run the `build` script included with the project. This will produce an extension package `ThumbnailSentry.xpi`.
 - Add the extension to Firefox
 
-  > **Note:** Since this extension isn't signed, it can only be added to Firefox Developer Edition or as a temporary addon to Firefox proper. To enable unsigned extensions in either, navigate to `about:config` and set the `xpinstall.signatures.required` flag to false.
+  <img src="./markup/unsigned-extension-info.svg"><br>
 
   - Add Permanent Extension
     - Navigate to `about:addons`
