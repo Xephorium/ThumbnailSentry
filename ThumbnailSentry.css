@@ -1,3 +1,10 @@
+
+img[src*='123456789'] {
+  content:url('https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png') !important;
+  background:url('https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png') !important;
+  background-size:cover !important;
+}
+
 a[title~='Mark Zuckerberg'] img {
   content:url('https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png') !important;
   background:url('https://raw.githubusercontent.com/Xephorium/ThumbnailSentry/master/resources/sentry.png') !important;
